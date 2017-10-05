@@ -125,7 +125,7 @@ På forsiden er et simpelt `slideshow`, lidt mumletekst og tre `tilfældige` pro
 ### Kontakt siden
 Jeg valgte at fjerne `kontakt siden` da jeg følte det var spild af en hel side kun at indenholde få tekst felter, derfor inkluderede jeg `kontakt formularen`i `footeren`.
 
-![wireframe mobil](https://github.com/wi73c-praktisk-web/hifi-tobias-brage/blob/master/forberedelse/Skærmbillede%202017-10-05%20kl.%2013.08.25.png?raw=true)
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/footer.jpg?raw=true)
 
 ### Produkter
 På produkt siden kan der enten vises alle produkter eller vælge at `sortere` dem efter `kategorier` fra `menuen` af, bemærk at `kategori dropdown menuen` er `dynamisk` og automatisk `tilføjer eller fjerner` nye `kategorier`.
