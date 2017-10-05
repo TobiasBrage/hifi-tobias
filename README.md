@@ -213,6 +213,6 @@ Oppe i højre hjørne findes en `dropdown menu` med følgende muligheder.
 ## Database
 ### Bruger database
 
-| id        | navn       | mail       | brugernavn | kodeord    | fk_tilladelse |
-| ----------|:----------:| ----------:|:----------:|:----------:|--------------:|
-| int(11)   | var(55)    | var(60)    | var(55)    | var(255)   | int(2)        |
+| id    |navn   |mail   |brugernavn|kodeord |fk_tilladelse|
+| ------|:-----:|:-----:|:--------:|:------:|------------:|
+|int(11)|var(55)|var(60)|var(55)   |var(255)|int(2)       |
