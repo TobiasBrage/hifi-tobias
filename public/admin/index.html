@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin | log ind</title>
+        <link href="../stylesheet/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <main id="loginContainer">
+            <h1 class="adminLoginTitle">Admin log ind</h1>
+            <form class="admin-login-form" id="admin-login-form" name="loginForm" method="POST" action="./" target="_self">
+                <span class="loginFormSpan">
+                    <label for="brugernavn" class="admin-login-label">Brugernavn:</label>
+                    <input type="text" placeholder="brugernavn" class="admin-login-input" name="brugernavn" id="brugernavn">
+                </span>
+                <span class="loginFormSpan">
+                    <label for="kodeord" class="admin-login-label">Adgangskode:</label>
+                    <input type="password" placeholder="kodeord" class="admin-login-input" name="kodeord" id="kodeord">
+                </span>
+                <span class="loginFormSpan">
+                    <a href="../" class="loginCancel">Annuller</a>
+                    <input type="submit" class="loginSubmit" value="Log ind" id="loginSubmit">
+                </span>
+            </form>
+        </main>
+    
+    <script src="../javascript/jquery.min.js"></script>
+    <script src="../javascript/login.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin forside</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../stylesheet/main.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" rel="home" href="./">
+                        <img class="navLogo" style="max-height:35px; margin-top: -7px;" src="../image/logo.png">
+                    </a>
+                    <a class="navbar-brand brand-name" href="./">HIFI butikken</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav" id="mainNavBar">
+                        <li class="dropdown">
+                            <a href="panel.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produkter <span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="categoryDropDown">
+                                <li><a href="panel.html">Alle produkter</a></li>
+                                <li><a href="panel.html?id=1">CD Afspillere</a></li>
+                                <li><a href="panel.html?id=2">DVD Afspillere</a></li>
+                                <li><a href="panel.html?id=3">Effektforstærkere</a></li>
+                                <li><a href="panel.html?id=4">Forforstærkere</a></li>
+                                <li><a href="panel.html?id=5">Højtalere</a></li>
+                                <li><a href="panel.html?id=6">Int. Forstærkere</a></li>
+                                <li><a href="panel.html?id=7">Pladespillere</a></li>
+                                <li><a href="panel.html?id=8">Rørforstærkere</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" id="userDropDown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                            <ul class="dropdown-menu">
+                                <li><a id="userSettings" href="settingsuser.html">Ændre profil</a></li>
+                                <li><a id="userSettings" href="settingspassword.html">Ændre adgangskode</a></li>
+                                <li><a id="userLogOut" href="./">Log ud</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron vertical-center">
+            <div class="container">
+                <div class="row" id="addProductContainer">
+                    <h2 class="addProductTitle">Bruger liste</h2>
+                    <ul id="editUserListContainer">
+                        
+                    </ul>
+                    <h2 class="addProductTitle">Tilføj bruger</h2>
+                    <span class="addProductSpan">
+                        <label for="name" class="addProductLabel">Brugerens navn</label>
+                        <input type="text" placeholder="navn" class="addProductInput" name="name" id="name">
+                    </span>
+                    <span class="addProductSpan">
+                        <label for="username" class="addProductLabel">Brugernavn</label>
+                        <input type="text" placeholder="brugernavn" class="addProductInput" name="username" id="username">
+                    </span>
+                    <span class="addProductSpan">
+                        <label for="mail" class="addProductLabel">Brugerens E-mail</label>
+                        <input type="text" placeholder="e-mail" class="addProductInput" name="mail" id="mail">
+                    </span>
+                    <span class="addProductSpan">
+                        <label class="addProductLabel">Brugerens tilladelse</label>
+                        <select id="addUserCategory"></select>
+                    </span>
+                    <span class="addProductSpan">
+                        <label for="password" class="addProductLabel">Brugerens adgangskode</label>
+                        <input type="password" class="addProductInput" name="password" id="password">
+                    </span>
+                    <span class="addProductSpan">
+                        <label for="repeatpassword" class="addProductLabel">Gentag adgangskode</label>
+                        <input type="password" class="addProductInput" name="repeatpassword" id="repeatpassword">
+                    </span>
+                    <span class="addProductSpan">
+                        <input type="button" value="Tilføj bruger" id="addUserSubmit">
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../javascript/adminEditUsers.js"></script>
+        <script src="../javascript/adminUser.js"></script>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+</html>
