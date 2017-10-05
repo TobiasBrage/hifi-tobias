@@ -209,3 +209,10 @@ Oppe i højre hjørne findes en `dropdown menu` med følgende muligheder.
   * Log ud
 
     Dette `logger brugeren` ud ved at slette `loggedIn cookien` og brugeren bliver derfor navigeret tilbage på `log ind` siden. Hvis man ikke ønsker at `logge ind` igen trykkes på `Annuller`, dette vil føre brugeren til den oprindelige side.
+
+## Database
+### Bruger database
+
+| id        | navn       | mail       | brugernavn | kodeord    | fk_tilladelse |
+| ----------|:----------:| ----------:|:----------:|:----------:|--------------:|
+| int(11)   | var(55)    | var(60)    | var(55)    | var(255)   | int(2)        |
