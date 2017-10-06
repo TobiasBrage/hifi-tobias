@@ -207,6 +207,8 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
   Her kan man se en liste med alle eksisterende `brugere` bortset fra sin egen. Hvis en `bruger` skal `slettes` trykkes der blot på `slet` til højre fra `brugernavnet`.
   Hvis der skal oprettes en `bruger` skal der indtastes en del oplysninger som skal bruges, siden melder med passende `fejlmeddelser` hvis er grund til det.
 
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/user.jpg?raw=true)
+
 * Beskeder
 
   Her vises blot en liste med alle `beskeder`. Hver besked har tre `vigtige elementer`.
