@@ -150,6 +150,8 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
 
   Log ind gør brug af `cookies` da ved et succesfuldt log ind gemmer siden en `cookie` i browseren med navnet `loggedIn` og hvor værdien er brugerens `id` fra `databasen`. Hvis brugeren ikke selv logger ud vil `loggedIn Cookien` automatisk blive slettet efter 2 døgn.
 
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/cookie.jpg?raw=true)
+
 * API
 
   Når brugeren logger ind bliver `brugernavn` og `adgangskode` værdierne givet videre til `API'et` som sørger for eventuelle fejlmeddelser eller ved et succesfuldt log ind returnerer brugerens `id`. `API'et` tjekker `brugernavnets` og `adgangskodens` længde og om `brugernavnet` eksisterer og hvis det gør om `adgangskoden` matcher, derfor kan `API'et` give adskillige fejlmeddelser.
