@@ -111,7 +111,7 @@
 
   * `/product/categories`
 
-  Returnerer alle kategorier med GET.
+    Returnerer alle kategorier med GET.
 
 ## Status
 ### Praktiske oplysninger
