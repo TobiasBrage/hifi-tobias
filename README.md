@@ -233,7 +233,7 @@ Oppe i højre hjørne findes en `dropdown menu` med følgende muligheder.
 
     Her kan `adgangskoden` ændres, det sker ved først at indtaste den eksisterende `adgangskode` og dernæst den nye `adgangskode` to gange for at minimere risikoen for stavefejl.
 
-![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/password.jpg?raw=true)
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/password2.jpg?raw=true)
 
   * Log ud
 
