@@ -164,6 +164,8 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
 
   `Adgangskoden` bliver `krypteret` til en simpel `MD5 kryptering`, det giver et tyndt lag af sikkerhed, men det er trods alt bedre end ingenting.
 
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/md5.jpg?raw=true)
+
 * Admin panel (CMS)
 
   `adminUser.js` er en fil som tjekker browseren for `loggedIn Cookien`, hvis den eksisterer bliver der foretaget en forspørgsel på `API'et` om brugerens oplysninger som `navn, brugernavn, mail og tilladelse`, hvis den ikke eksisterer bliver brugeren smidt på forsiden.
