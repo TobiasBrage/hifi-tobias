@@ -57,9 +57,9 @@
 
     SLetter en kategori med GET.
 
-* `/delete/message/:id`
+  * `/delete/message/:id`
 
-    Sletter en besked med GET.
+      Sletter en besked med GET.
 
 * hent et element
   * `/category/:id`
