@@ -171,11 +171,13 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
   `adminUser.js` er en fil som tjekker browseren for `loggedIn Cookien`, hvis den eksisterer bliver der foretaget en forspørgsel på `API'et` om brugerens oplysninger som `navn, brugernavn, mail og tilladelse`, hvis den ikke eksisterer bliver brugeren smidt på forsiden.
   Man kan derfor ikke befinde sig på admin delen af hjemmesiden uden at være `logget ind` da alle filer i `admin mappen` inkluderer `adminUser.js` filen.
   Indtil videre er der to slags tilladelser på siden:
+  
     * admin
 
       Giver kun tilladelse til at se og slette beskeder da denne type bruger er ment som en `support bruger` der kan svare på henvendelser.
 
 ![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/admin.jpg?raw=true)
+    
     * superadmin
 
       Denne type bruger har fuld adgang.
