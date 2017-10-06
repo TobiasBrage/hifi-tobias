@@ -1,21 +1,17 @@
 # HIFI praktik
 
-## Forberedelse
-* Design
-* Wireframe
-* ER diagram
-* Sider
-  * Forside
-  * Produkt side
-  * Admin side
-    * Log ind
-    * Profil indstillinger
-      * Ændre adgangskode
-      * Ændre profil oplysninger
-    * Redigere produkter
-    * Tilføj produkter
-    * Beskeder
-    * Brugere
+## Sider
+* Forside
+* Produkt side
+* Admin side
+  * Log ind
+  * Profil indstillinger
+    * Ændre adgangskode
+    * Ændre profil oplysninger
+  * Redigere produkter
+  * Tilføj produkter
+  * Beskeder
+  * Brugere
 
 ## Routes
 * redigere
