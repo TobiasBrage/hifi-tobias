@@ -141,6 +141,8 @@ På produkt siden kan der enten vises alle produkter eller vælge at `sortere` d
 ### Søge funktion
 Søge funktionen virker ved at tage værdien fra et `text input` for så at lave en forspørgsel i `API'et` udfra følgnde `route: http://localhost:1337/search/:src`, `src` er værdien der bliver søgt efter. Der bliver søgt i databasen med værdien ved brug af `LIKE` funktionen i `SQL` hvor den i dette eksempel kun søger efter titel på et givende produkt. På `forsiden` har `søge inputtet` en ekstra `funktion`, her viser den resultater under `søge formularen` i takt med at man indtaster.
 
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/search.jpg?raw=true)
+
 ### Log ind funktion
 `Log ind` siden kan findes ved at klikke på "Admin panel" i bunden af `footeren`, her vil man blive ført til `log ind formularen`.
 
@@ -175,9 +177,13 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
 
       Giver kun tilladelse til at se og slette beskeder da denne type bruger er ment som en `support bruger` der kan svare på henvendelser.
 
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/admin.jpg?raw=true)
+
     * superadmin
 
       Denne type bruger har fuld adgang.
+
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/superadmin.jpg?raw=true)
 
 ## Admin siden (CMS)
 `Admin` siden indenholder følgende sider:
