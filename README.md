@@ -182,7 +182,7 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
   * `Slet` sletter produktet.
   * `Rediger` gør det muligt at ændre billede på produktet, ændre titel eller ændre på beskrivelsen. Når man er færdig med at redigere trykkes på `Gem` knappen som opdaterer siden og gemmer de nye oplysninger ved at `POST` værdierne til `API'et`.
 
-![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/footer.jpg?raw=true)
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/editproduct.jpg?raw=true)
 
 * Tilføj produkt
 
