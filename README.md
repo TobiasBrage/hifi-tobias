@@ -193,9 +193,14 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
 * Tilføj produkt
 
   Her kan man først og fremmeste oprette et nyt pordukt. Først skal der `uploades` et billede, dette gøres ved at trykke på `Vælg billede` knappen som lader dig vælge en fil fra computeren. Derefter trykkes på `Upload billede`, hvis alt gik som det skulle vil siden vise billedet, ellers vil en passende `fejlmeddelse` vise sig.
+
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/upload.jpg?raw=true)
+
   Nu skal der indtastes nogle oplysninger som er krævet før at produktet kan blive oprettet, alle `text input`skal overskride en passende længde ellers skal siden nok fortælle brugeren hvis der er noget galt.
   Når der skal vælges en `kategori` til produktet kan der vælges en fra listen ellers kan der trykkes på `Rediger kategorier`, hvor der vil vise sig tre `elementer`. Hvis der blot skal `slettes` en `kategori` vælges `kategorien` på listen og derefter trykkes på `Slet kategori` knappen.
   Hvis der derimod skal oprettes en ny `kategori` skrives `kategoriens` navn og der trykkes på `Tilføj kategori`. Uanset om der slettes eller oprettes en `kategori` vil listen blive opdateret.
+
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/category.jpg?raw=true)
 
 * Brugere
 
