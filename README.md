@@ -125,7 +125,7 @@
   * `brugernavn`: superadmin og `adgangskode`: superadmin
 
 ### Design
-Siden bruger `bootstrap` og kan til en vis grad tilpasse sig alle skærmstørelser, men da jeg aldrig før har brugt `javascript` i så stor en grad som dette projekt krævede mistede jeg overblikket over `mobile first` og havde mere fokus på de mange funktioner siden skulle have.
+Siden bruger `bootstrap` og kan til en vis grad tilpasse sig alle skærmstørelser, men da jeg aldrig før har brugt `javascript` i så stor en grad som dette projekt krævede, mistede jeg overblikket over `mobile first` og havde mere fokus på de mange funktioner siden skulle have.
 
 ### Forsiden
 På forsiden er et simpelt `slideshow`, lidt mumletekst og tre `tilfældige` produkter ved at bruge `/product/:id routet`, `id` er dog `=rand` da der i `API'et` er en `funktion` der kan generere et `tilfældigt` tal hvis `id=rand`.
@@ -139,14 +139,14 @@ Jeg valgte at fjerne `kontakt siden` da jeg følte det var spild af en hel side 
 På produkt siden kan der enten vises alle produkter eller vælge at `sortere` dem efter `kategorier` fra `menuen` af, bemærk at `kategori dropdown menuen` er `dynamisk` og automatisk `tilføjer eller fjerner` nye `kategorier`.
 
 ### Søge funktion
-Søge funktionen virker ved at tage værdien fra et `text input` for så at lave en forspørgsel i API'et udfra følgnde `route: http://localhost:1337/search/:src`, `src` er værdien der bliver søgt efter. Der bliver søgt i databasen med værdien ved brug af `LIKE` funktionen i `SQL` hvor den i dette eksempel kun søger efter titel på et givende produkt. På `forsiden` har `søge inputtet` en ekstra `funktion`, her viser den resultater i takt med at man indtaster under `søge formularen`.
+Søge funktionen virker ved at tage værdien fra et `text input` for så at lave en forspørgsel i `API'et` udfra følgnde `route: http://localhost:1337/search/:src`, `src` er værdien der bliver søgt efter. Der bliver søgt i databasen med værdien ved brug af `LIKE` funktionen i `SQL` hvor den i dette eksempel kun søger efter titel på et givende produkt. På `forsiden` har `søge inputtet` en ekstra `funktion`, her viser den resultater under `søge formularen` i takt med at man indtaster.
 
 ### Log ind funktion
 `Log ind` siden kan findes ved at klikke på "Admin panel" i bunden af `footeren`, her vil man blive ført til `log ind formularen`.
 
 * Cookie
 
-  Log ind gør brug af `cookies` da ved et succesfuldt log ind siden gemmer en `cookie` i browseren med navnet `loggedIn` og hvor værdien er brugerens `id` fra `databasen`. Hvis brugeren ikke selv logger ud vil `loggedIn Cookien` automatisk blive slettet efter 2 døgn.
+  Log ind gør brug af `cookies` da ved et succesfuldt log ind gemmer siden en `cookie` i browseren med navnet `loggedIn` og hvor værdien er brugerens `id` fra `databasen`. Hvis brugeren ikke selv logger ud vil `loggedIn Cookien` automatisk blive slettet efter 2 døgn.
 
 * API
 
@@ -177,10 +177,12 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
 `Admin` siden indenholder følgende sider:
 * Produkter
 
-  Her kan man vælge at få vist alle produkter på en gang eller at vise produkter udfra kategorier.
+  Her kan man vælge at få vist alle produkter på en gang eller at vise produkter ud fra kategorier.
   På `admin` siden har hvert produkt en `Slet` og en `Rediger` knap.
   * `Slet` sletter produktet.
   * `Rediger` gør det muligt at ændre billede på produktet, ændre titel eller ændre på beskrivelsen. Når man er færdig med at redigere trykkes på `Gem` knappen som opdaterer siden og gemmer de nye oplysninger ved at `POST` værdierne til `API'et`.
+
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/footer.jpg?raw=true)
 
 * Tilføj produkt
 
