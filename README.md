@@ -144,6 +144,8 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
 ### Log ind funktion
 `Log ind` siden kan findes ved at klikke på "Admin panel" i bunden af `footeren`, her vil man blive ført til `log ind formularen`.
 
+![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/login.jpg?raw=true)
+
 * Cookie
 
   Log ind gør brug af `cookies` da ved et succesfuldt log ind gemmer siden en `cookie` i browseren med navnet `loggedIn` og hvor værdien er brugerens `id` fra `databasen`. Hvis brugeren ikke selv logger ud vil `loggedIn Cookien` automatisk blive slettet efter 2 døgn.
