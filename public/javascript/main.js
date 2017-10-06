@@ -31,7 +31,7 @@ $(function(){
     }
 });
 
-$("#srcInput").on('keydown', function(){
+$("#srcInput").on('keyup', function(){
     var searchQuery = document.querySelector('#srcInput').value;
     var results = false;
     if(searchQuery.length > 1) {

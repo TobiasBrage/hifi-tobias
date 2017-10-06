@@ -4,16 +4,18 @@
 * Design
 * Wireframe
 * ER diagram
-* Forside
-* Produkt side
-* Admin side
-  * Log ind
-  * Profil indstillinger
-    * Ændre adgangskode
-    * Ændre profil oplysninger
-  * Redigere produkter
-  * Beskeder
-  * Brugere
+* Sider
+  * Forside
+  * Produkt side
+  * Admin side
+    * Log ind
+    * Profil indstillinger
+      * Ændre adgangskode
+      * Ændre profil oplysninger
+    * Redigere produkter
+    * Tilføj produkter
+    * Beskeder
+    * Brugere
 
 ## Routes
 * redigere
@@ -116,6 +118,12 @@
   Returnerer alle kategorier med GET.
 
 ## Status
+### Praktiske oplysninger
+* `API` kører på `port: 1337` - `http://localhost:1337/`
+* Der ligger to brugere i `bruger tabellen`
+  * `brugernavn`: admin og `adgangskode`: admin
+  * `brugernavn`: superadmin og `adgangskode`: superadmin
+
 ### Design
 Siden bruger `bootstrap` og kan til en vis grad tilpasse sig alle skærmstørelser, men da jeg aldrig før har brugt `javascript` i så stor en grad som dette projekt krævede mistede jeg overblikket over `mobile first` og havde mere fokus på de mange funktioner siden skulle have.
 
@@ -210,9 +218,33 @@ Oppe i højre hjørne findes en `dropdown menu` med følgende muligheder.
 
     Dette `logger brugeren` ud ved at slette `loggedIn cookien` og brugeren bliver derfor navigeret tilbage på `log ind` siden. Hvis man ikke ønsker at `logge ind` igen trykkes på `Annuller`, dette vil føre brugeren til den oprindelige side.
 
-## Database
-### Bruger database
+## hifi database
+* bruger database
 
-|id     |navn   |mail   |brugernavn|kodeord |fk_tilladelse|
-|-------|:------|:------|:---------|:-------|:------------|
-|int(11)|var(55)|var(60)|var(55)   |var(255)|int(2)       |
+  |id     |navn   |mail   |brugernavn|kodeord |fk_tilladelse|
+  |:------|:------|:------|:---------|:-------|:------------|
+  |int(11)|var(55)|var(60)|var(55)   |var(255)|int(2)       |
+
+* tilladelse database
+
+  |id     |navn   |
+  |:------|:------|
+  |int(11)|var(55)|
+
+* kontakt database
+
+  |id     |navn   |mail   |besked   | 
+  |:------|:------|:------|:--------|
+  |int(11)|var(55)|var(55)|char(255)|
+
+* produkter database
+
+  |id     |varenr |navn   |billede|beskrivelse|fk_kategori|pris    |beholdning|
+  |:------|:------|:------|:------|:----------|:----------|:-------|:---------|
+  |int(11)|int(11)|var(55)|var(55)|char(255)  |int(11)    |dec(6,2)|int(11)   |
+
+* kategori database
+
+  |id     |navn   |
+  |:------|:------|
+  |int(11)|var(55)|

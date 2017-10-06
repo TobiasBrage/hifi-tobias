@@ -23,7 +23,9 @@ function deleteMessage(messageId) {
             return response.json();
         })
         .then((data) => {
-            alert(data);
+            if(data == 'deletedSuccess') {
+                location.reload();
+            }
         });
     }
 }

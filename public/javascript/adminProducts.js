@@ -1,5 +1,17 @@
 var searchParams = new URLSearchParams(window.location.search);
 let getCat = searchParams.get('id');
+var loggedInId = readCookie('loggedIn');
+
+fetch('http://localhost:1337/user/id='+loggedInId)
+.then((response) => {
+    return response.json();
+})
+.then((data) => {
+    var userPermission = data[0].tilladelse;
+    if(userPermission == 'admin') {
+        window.location.href = 'messages.html';
+    }
+});
 
 fetch('http://localhost:1337/product/categories')
 .then((response) => {
@@ -166,4 +178,15 @@ function saveProduct(editId) {
 function imageChange(editId) {
     let tmpChoosenImg = document.querySelector('#editSelectImage'+editId).value;
     document.getElementById('editImage'+editId).src="../image/"+tmpChoosenImg;
+}
+
+function readCookie(cookieName) {
+    var nameTmp = cookieName + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameTmp) == 0) return c.substring(nameTmp.length,c.length);
+    }
+    return null;
 }
