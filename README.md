@@ -176,7 +176,6 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
       Giver kun tilladelse til at se og slette beskeder da denne type bruger er ment som en `support bruger` der kan svare på henvendelser.
 
 ![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/admin.jpg?raw=true)
-
     * superadmin
 
       Denne type bruger har fuld adgang.
