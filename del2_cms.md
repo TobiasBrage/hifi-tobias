@@ -106,4 +106,3 @@ Der kommer til at være adskillige routes for at det hele kan fungere.
 * `/product/categories`
 
     Returnerer alle kategorier med GET.
-
