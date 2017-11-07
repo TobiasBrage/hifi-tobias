@@ -39,6 +39,10 @@ For hver `produkt` kan der `ændres billede, titel, beskrivelse, pris` og produk
 
     Der kan naturligvis også `oprettes produkter`, det kan gøres ved at klikke på menupunktet `Tilføj produkt`, her er der mulighed for at `uploade billede, oprette titel, beskrivelse og vælge kategori eller oprette en ny`.
 
+* Menu
+
+    `Menuen` skal være `dynamisk`, derfor vil der være et menu punkt til redigering af menu punkter hvor der kan slettes, oprettes og redigeres i menuen.
+
 ## CMS opsætning
 
 Der kommer til at være adskillige routes for at det hele kan fungere.

@@ -273,4 +273,4 @@ Oppe i højre hjørne findes en `dropdown menu` med følgende muligheder.
 
   |id     |navn   |
   |:------|:------|
-  |int(11)|var(55)|
+  |int(11)|var(55)| 
