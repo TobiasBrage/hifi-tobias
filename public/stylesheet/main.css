@@ -1085,3 +1085,156 @@ footer {
     padding:10px 0 10px 0;
     margin:0px 0 10px 0;
 }
+
+/* cms login */
+
+#cmsLoginContainer {
+    width:500px;
+    background-color:#fff;
+    margin:50px auto 0 auto;
+    padding:0;
+}
+
+.cmsLoginTitle {
+    width:100%;
+    color:#999;
+    text-align: center;
+    font-weight:lighter;
+    margin:20px 0 20px 0;
+    float:left;
+}
+
+.cms-login-form {
+    float:left;
+    width:100%;
+}
+
+.cmsLoginSpan {
+    width:100%;
+    float:left;
+    margin:0 0 10px 0;
+}
+
+.cmsLoginInputTitle {
+    width:100%;
+    float:left;
+    color:#999;
+    font-weight: lighter;   
+}
+
+#cmsLoginUsernameInput {
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:18px;
+    outline:0;
+    margin:10px 0 5px 0;
+}
+
+#cmsLoginPasswordInput {
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:18px;
+    outline:0;
+    margin:10px 0 0 0;
+}
+
+#cmsLoginSubmit {
+    width:100%;
+    padding:10px;
+    text-align:center;
+    font-size:18px;
+    float:left;
+    border:0;
+    border:1px solid #5b9d69;
+    border-radius:3px;
+    color:#fff;
+    cursor: pointer;
+    background-color:#7BB688;
+    margin:10px 0 0 0;
+    outline:0;
+}
+
+/* cms index */
+
+#cmsContentContainer {
+    margin:80px 0 395px 0;
+}
+
+#cmsPanelTitle {
+    width:100%;
+    float:left;
+    color:#555;
+    font-size:18px;
+    margin:0;
+}
+
+#cmsUserForm {
+    float:left;
+    width:350px;
+    margin:20px 0 0 0;
+}
+
+#cmsUsername {
+    width:300px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:16px;
+    outline:0;
+    float:left;
+    margin:0 0 20px 0;
+}
+
+#cmsForname {
+    width:300px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:16px;
+    outline:0;
+    float:left;
+    margin:0 0 20px 0;
+}
+
+#cmsMail {
+    width:300px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:16px;
+    outline:0;
+    float:left;
+}
+
+.cmsUserEditLabel {
+    float:left;
+    width:300px;
+    color:#999;
+    font-weight:lighter;
+    font-size:16px;
+}
+
+#cmsUserSubmit {
+    width:300px;
+    padding:10px;
+    text-align:center;
+    font-size:16px;
+    float:left;
+    border:0;
+    border:1px solid #5b9d69;
+    border-radius:3px;
+    color:#fff;
+    cursor: pointer;
+    background-color:#7BB688;
+    margin:20px 0 0 0;
+    outline:0;
+}

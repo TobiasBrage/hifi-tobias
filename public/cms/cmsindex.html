@@ -1,0 +1,135 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Forside</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../stylesheet/main.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" rel="home" href="./">
+                    <img class="navLogo" style="max-height:35px; margin-top: -7px;" src="../image/logo.png">
+                </a>
+                <a class="navbar-brand brand-name" href="./">HI-FI butikken</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./">Forside</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="userDropDown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">username</a>
+                        <ul class="dropdown-menu">
+                            <li><a id="userLogOut" href="./">Log ud</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container featured" id="featured-container">
+        <div class="row" id="cmsContentContainer">
+            <h1 id="cmsPanelTitle">CMS Panel</h1>
+            <form id="cmsUserForm">
+                <label class="cmsUserEditLabel" for="cmsUsername">Brugernavn</label>
+                <input type="text" id="cmsUsername" value="">
+                <label class="cmsUserEditLabel" for="cmsForname">Navn</label>
+                <input type="text" id="cmsForname" value="">
+                <label class="cmsUserEditLabel" for="cmsMail">E-mail</label>
+                <input type="text" id="cmsMail" value="">
+                <input type="button" id="cmsUserSubmit" value="Gem oplysninger">
+            </form>
+        </div>
+    </div>
+    
+    <div class="jumbotron vertical-center footerContainer">
+        <div class="container contact-container">
+            <div class="row">
+                <footer>
+                    <ul class="footerCatListContainer">
+                        <span class="footerCatListTitle">Produkter:</span>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=1">- CD Afspillere</a>
+                        </li>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=2">- DVD Afspillere</a>
+                        </li>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=3">- Effektforstærkere</a>
+                        </li>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=4">- Forforstærkere</a>
+                        </li>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=5">- Højtalere</a>
+                        </li>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=6">- Int. Forstærkere</a>
+                        </li>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=7">- Pladespillere</a>
+                        </li>
+                        <li class="footerCatListItem">
+                            <a class="footerCatListLink" href="produkt/?id=8">- Rørforstærkere</a>
+                        </li>
+                    </ul>
+    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.609450507774!2d12.08643651592565!3d55.62621108051968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525febb0094315%3A0x301e6d7406747f0d!2sPulsen+8%2C+4000+Roskilde!5e0!3m2!1sda!2sdk!4v1506075375500" class="footerMap" allowfullscreen></iframe>                    
+    
+                    <ul class="footerHomeListContainer">
+                        <span class="footerHomeListTitle">Vi bor her:</span>
+                        <li class="footerHomeListItem">
+                            Pulsen 8
+                        </li>
+                        <li class="footerHomeListItem">
+                            4000 Roskilde
+                        </li>
+                        <li class="footerHomeListItem">
+                            Sjælland, Danmark
+                        </li>
+                        <li class="footerHomeListItem">
+                            Har du spørgsmål skal du ikke tøve med at kontakte os, vi svarer indenfor 2 hverdage.
+                        </li>
+                    </ul>
+    
+                    <form class="contact-form" name="contactForm" method="POST" action="./" target="_self">
+                        <span class="contactFormSpan">
+                            <label for="navn" class="contactNameLabel">Dit navn:</label>
+                            <input type="text" placeholder="Navn" class="contact-name" name="navn" id="name">
+                        </span>
+                        <span class="contactFormSpan">
+                            <label for="mail" class="contactMailLabel">Din mail:</label>
+                            <input type="text" placeholder="Mail" class="contact-mail" name="mail" id="mail">
+                        </span>
+                        <span class="contactFormSpan">
+                            <label for="message" class="contactMessageLabel">Din besked:</label>
+                            <textarea class="contact-message" name="message" id="message"></textarea>
+                        </span>
+                        <input type="button" class="contactSubmit" value="Submit" id="contactSubmit">
+                    </form>
+    
+                    <div class="footerCopyright">HIFI Butikken - Vi sørger for ordentlig lyd © | Est. 2017 | CVR: 66 77 88 99 | <a href="admin/">Admin panel</a></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../javascript/userDetails.js"></script>
+    <script src="../javascript/cmsMain.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+    </html>

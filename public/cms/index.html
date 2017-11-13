@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin | log ind</title>
+        <link href="../stylesheet/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <main id="cmsLoginContainer">
+            <h1 class="cmsLoginTitle">Admin log ind</h1>
+            <form class="cms-login-form" id="cms-login-form" name="loginForm" method="POST" action="./" target="_self">
+                <span class="cmsLoginSpan">
+                    <label class="cmsLoginInputTitle" for="cmsLoginUsernameInput">Brugernavn</label>
+                    <input type="text" id="cmsLoginUsernameInput" value="admin">
+                </span>
+                <span class="cmsLoginSpan">
+                    <label class="cmsLoginInputTitle" for="cmsLoginPasswordInput">Adgangskode</label>
+                    <input type="password" id="cmsLoginPasswordInput" value="admin">
+                </span>
+                <span class="cmsLoginSpan">
+                    <input type="submit" id="cmsLoginSubmit" value="Log ind">
+                </span>
+            </form>
+        </main>
+    
+    <script src="../javascript/jquery.min.js"></script>
+    <script src="../javascript/cmslogin.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+</html>

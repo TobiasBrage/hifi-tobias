@@ -19,7 +19,7 @@ For hver `produkt` kan der `ændres billede, titel, beskrivelse, pris` og produk
 
 ![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/raw/master/forberedelse/editproducts.jpg?raw=true)
 
-## CMS funktioner
+## CMS funktioner 
 
 * Bruger
 
