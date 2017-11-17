@@ -41,16 +41,60 @@
     
     <div class="container featured" id="featured-container">
         <div class="row" id="cmsContentContainer">
-            <h1 id="cmsPanelTitle">CMS Panel</h1>
-            <form id="cmsUserForm">
-                <label class="cmsUserEditLabel" for="cmsUsername">Brugernavn</label>
-                <input type="text" id="cmsUsername" value="">
-                <label class="cmsUserEditLabel" for="cmsForname">Navn</label>
-                <input type="text" id="cmsForname" value="">
-                <label class="cmsUserEditLabel" for="cmsMail">E-mail</label>
-                <input type="text" id="cmsMail" value="">
-                <input type="button" id="cmsUserSubmit" value="Gem oplysninger">
-            </form>
+            <div class="container cmsUserContainer col-md-4">
+                <div class="cmsUserEditContainer">
+                    <h1 class="cmsPanelTitle userDataTitle">Bruger oplysninger</h1>
+                    <form id="cmsUserForm">
+                        <label class="cmsUserEditLabel" for="cmsUsername">Brugernavn</label>
+                        <input type="text" id="cmsUsername" value="">
+                        <label class="cmsUserEditLabel" for="cmsForname">Navn</label>
+                        <input type="text" id="cmsForname" value="">
+                        <label class="cmsUserEditLabel" for="cmsMail">E-mail</label>
+                        <input type="text" id="cmsMail" value="">
+                        <input type="button" id="cmsUserSubmit" value="Gem oplysninger">
+                    </form>
+                </div>
+                <div class="cmsUserEditContainer addProductContainer">
+                    <h1 class="cmsPanelTitle">Tilføj produkt</h1>
+                    <form method="POST" id="addProductImageForm" name="fileinfo" onsubmit="return imageUpload();">
+                        <label class="cmsUserEditLabel" for="cmsTitle">Titel</label>
+                        <input type="text" id="cmsTitle" value="">
+                        <label class="cmsUserEditLabel" for="cmsPrice">Pris</label>
+                        <input type="text" id="cmsPrice" value="">
+                        <label class="cmsUserEditLabel" for="cmsCategory">Kategori</label>
+                        <select id="cmsCategory">
+                            <option value="1">Cd Afspillere</option>
+                        </select>
+                        <label class="cmsUserEditLabel" for="cmsDescription">Beskrivelse</label>
+                        <textarea id="cmsDescription"></textarea>
+                        <p id="cmsImageFileName">Intet billede er valgt.</p>
+                        <input type="button" value="Vælg billede" id="cmsImageChooseBtn">
+                        <input id="addProductImageUpload" type="file" name="file" onchange="imageChange()"/>
+                        <input type="submit" id="cmsUserSubmit" value="Opret">
+                    </form>
+                </div>
+            </div>
+            <div class="container cmsProductContainer col-md-8">
+                <h1 class="cmsPanelTitle">Produkter</h1>
+                <ul id="cmsProductUl">
+
+                    <li class="cmsProductItem">
+                        <img class="cmsProductImage" src="../image/'+element.billede+'">
+                        <div class="cmsTitleContainer">
+                            <h3 class="cmsProductTitle">'+element.navn+'</h3>
+                        </div>
+                        <div class="cmsDescriptionContainer">
+                            <p class="cmsProductDescription">'+element.beskrivelse+'</p>
+                        </div>
+                        <div class="cmsProductEdit">
+                            <span class="glyphicon glyphicon-trash"></span>
+                            <span class="glyphicon glyphicon-edit"></span>
+                            <span class="glyphicon glyphicon-resize-full"></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     </div>
     

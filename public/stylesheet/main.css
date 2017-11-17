@@ -354,7 +354,7 @@ footer {
 
 .footerContainer {
     padding:20px 0 20px 0;
-    margin:-70px 0 0 0;
+    margin:-90px 0 0 0;
 }
 
 .footerMap {
@@ -652,7 +652,6 @@ footer {
     font-size:18px;
     padding:0;
 }
-
 
 .editedEditImage {
     width:100%;
@@ -1163,10 +1162,10 @@ footer {
 /* cms index */
 
 #cmsContentContainer {
-    margin:80px 0 395px 0;
+    margin:51px 0 0 0;
 }
 
-#cmsPanelTitle {
+.cmsPanelTitle {
     width:100%;
     float:left;
     color:#555;
@@ -1174,14 +1173,14 @@ footer {
     margin:0;
 }
 
-#cmsUserForm {
+#addProductImageForm {
     float:left;
-    width:350px;
+    width:100%;
     margin:20px 0 0 0;
 }
 
 #cmsUsername {
-    width:300px;
+    width:100%;
     border:1px solid #ddd;
     border-radius:3px;
     padding:10px;
@@ -1193,7 +1192,7 @@ footer {
 }
 
 #cmsForname {
-    width:300px;
+    width:100%;
     border:1px solid #ddd;
     border-radius:3px;
     padding:10px;
@@ -1205,7 +1204,7 @@ footer {
 }
 
 #cmsMail {
-    width:300px;
+    width:100%;
     border:1px solid #ddd;
     border-radius:3px;
     padding:10px;
@@ -1217,14 +1216,14 @@ footer {
 
 .cmsUserEditLabel {
     float:left;
-    width:300px;
+    width:100%;
     color:#999;
     font-weight:lighter;
     font-size:16px;
 }
 
 #cmsUserSubmit {
-    width:300px;
+    width:100%;
     padding:10px;
     text-align:center;
     font-size:16px;
@@ -1237,4 +1236,214 @@ footer {
     background-color:#7BB688;
     margin:20px 0 0 0;
     outline:0;
+}
+
+.cmsUserContainer {
+    padding:20px 20px 0 0;
+}
+
+.cmsProductContainer {
+    padding:20px 0 20px 20px;
+}
+
+#cmsProductUl {
+    width:100%;
+    float:left;
+    min-height:100px;
+    margin:20px 0 0 0;
+    padding:0;
+    list-style: none;
+}
+
+.cmsProductItem {
+    background-color:#fff;
+    width:100%;
+    float:left;
+    height:auto;
+    border-bottom:1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    overflow:hidden;
+}
+
+.cmsProductItem:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.cmsProductItem:first-child {
+    border-top:1px solid #ddd;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.cmsProductItem:last-child {
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+.cmsProductImage {
+    float:left;
+    height:100px;
+    width:200px;
+    padding:0;
+    margin:0;
+}
+
+.cmsProductTitle {
+    width:100%;
+    float:left;
+    margin:5px 10px 5px 10px;
+    font-size:22px;
+    color:#555;
+    padding:0;
+}
+
+.cmsProductEdit {
+    width:25px;
+    min-height:100px;
+    float:left;
+    margin:-44px 0 0 0;
+}
+
+.glyphicon-trash {
+    color:#AB4D37;
+    width:100%;
+    text-align: center;
+    margin:5px 0 0 0;
+    cursor: pointer;
+}
+
+.glyphicon-edit {
+    color:#999;
+    width:100%;
+    text-align: center;
+    margin:5px 0 0 0;
+    cursor: pointer;
+}
+
+.glyphicon-resize-full {
+    color:#999;
+    width:100%;
+    text-align: center;
+    margin:5px 0 0 0;
+    cursor: pointer;
+}
+
+.cmsTitleContainer {
+    width:512px;
+    float:left;
+    min-height:10px;
+    margin:5px 0 5px 0;
+    padding:0;
+}
+
+.cmsDescriptionContainer {
+    width:512px;
+    float:left;
+    min-height:10px;
+    margin:0;
+    padding:0;
+}
+
+.cmsProductDescription {
+    float:left;
+    color:#999;
+    font-size:16px;
+    padding:0 10px 5px 10px;
+    min-height:45px;
+    overflow:hidden;
+}
+
+#cmsCategory {
+    width:100%;
+    margin:0 0 20px 0;
+    float:left;
+}
+
+.cmsUserEditContainer {
+    float:left;
+    min-height:100px;
+    width:300px;
+    border-bottom:1px solid #ddd;
+    padding:0 0 20px 0;
+    margin:0;
+}
+
+.addProductContainer {
+    padding:20px 0 0 0;
+}
+
+#cmsTitle {
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:16px;
+    outline:0;
+    float:left;
+    margin:0 0 20px 0;
+}
+
+#cmsPrice {
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:16px;
+    outline:0;
+    float:left;
+    margin:0 0 20px 0;
+}
+
+#cmsDescription {
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
+    color:#999;
+    font-size:16px;
+    outline:0;
+    float:left;
+    resize:vertical;
+}
+
+.userDataTitle {
+    margin:0 0 20px 0;
+}
+
+#cmsImageFileName {
+    float:left;
+    color:#555;
+    text-align: center;
+    width:100%;
+    margin:10px 0 0 0;
+    padding:0 0 10px 0;
+    font-size:16px;
+}
+
+#cmsImageChooseBtn {
+    width:100%;
+    padding:10px;
+    text-align:center;
+    font-size:16px;
+    float:left;
+    border:0;
+    border:1px solid #ddd;
+    border-radius:3px;
+    color:#999;
+    cursor: pointer;
+    background-color:#f5f5f5;
+    margin:0 0 0 0;
+    outline:0;
+}
+
+.test {
+    width:512px;
+    float:left;
+    color:#999;
+    font-size:16px;
+    padding:0 10px 5px 10px;
+    height:auto;
 }
