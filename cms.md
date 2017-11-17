@@ -7,6 +7,8 @@
 * Det statiske design sættes op - HTML, CSS
 * Programmering af CMS med Javascript
 
+Der er markant mere sikkerhed i dette CMS, da der er en token cookie og en userid cookie. Hvis brugeren ændrer på en af cookiesene som man kan i Chrome vil brugeren blive smidt af, det var ikke tilfældet i tidligere CMS i "admin" mappen.
+
 ## Skitser / design
 
 Log ind siden er meget simpel i sin opsætning, centereret på siden er en `container` med en `log ind form`.
