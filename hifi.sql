@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Oct 06, 2017 at 10:32 AM
+-- Generation Time: Nov 17, 2017 at 09:03 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.1
 
@@ -68,7 +68,8 @@ INSERT INTO `kategori` (`id`, `navn`) VALUES
 (5, 'Højtalere'),
 (6, 'Int. Forstærkere'),
 (7, 'Pladespillere'),
-(8, 'Rørforstærkere');
+(8, 'Rørforstærkere'),
+(12, 'DAB Radio');
 
 -- --------------------------------------------------------
 
@@ -113,11 +114,11 @@ CREATE TABLE `produkter` (
 --
 
 INSERT INTO `produkter` (`id`, `varenr`, `navn`, `billede`, `beskrivelse`, `fk_kategori`, `pris`, `beholdning`) VALUES
-(1, 1001, 'Creek Classic', 'creek_Classic_CD.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in risus.', 1, '599.95', 5),
-(2, 1002, 'Creek Destiny', 'creek_Destiny_CD.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in rises', 1, '799.95', 2),
-(3, 1003, 'Creek Evo', 'creek_evo_cd.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in rises', 1, '399.95', 4),
+(1, 1001, 'Creek Classic', 'creek_Classic_CD.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincit ac imperdiet quis, porttitor in risus.', 1, '599.95', 5),
+(2, 1002, 'Creek Destiny', 'creek_destinyamp.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincit ac imperdiet quis, porttitor in risus.', 1, '799.95', 2),
+(3, 1003, 'Creek Evo', 'creek_evo_cd.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam.', 1, '399.95', 4),
 (4, 1004, 'Exposure 2010S', 'exposure_2010S.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in risus.', 2, '399.95', 3),
-(5, 1005, 'Parasound D200', 'parasound_d200.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in risus.', 2, '499.95', 6),
+(5, 1005, 'Parasound D200', 'manley_neoclassic300b.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in risus.', 2, '499.95', 6),
 (6, 1006, 'Parasound Halod 3', 'parasound_halod3.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in risus.', 2, '799.95', 3),
 (7, 1007, 'Manley Mahi', 'manley_mahi.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in risus.', 3, '1299.95', 2),
 (8, 1008, 'Manley Neoclassic 300B', 'manley_neoclassic300b.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium finibus metus eget aliquam. Morbi vitae nisi velit. Proin sit amet pharetra metus, nec semper ante. Sed nibh quam, tincidunt ac imperdiet quis, porttitor in risus.', 3, '1499.95', 1),
@@ -163,6 +164,27 @@ INSERT INTO `tilladelse` (`id`, `navn`) VALUES
 (1, 'admin'),
 (3, 'superadmin');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userToken`
+--
+
+CREATE TABLE `userToken` (
+  `id` int(11) NOT NULL,
+  `sessionName` varchar(64) NOT NULL,
+  `userId` int(11) NOT NULL,
+  `created` timestamp(6) NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `userToken`
+--
+
+INSERT INTO `userToken` (`id`, `sessionName`, `userId`, `created`) VALUES
+(158, '1510311231659hi01yvj2roltio5t9op72w5m7cbbpd1iwnvlh725s7hp8m4q', 5, NULL),
+(168, '1510903508339cbczht7tfwk0cfzs789oq9cj626z7odext9i5hwial3chxg9', 24, NULL);
+
 --
 -- Indexes for dumped tables
 --
@@ -203,6 +225,12 @@ ALTER TABLE `tilladelse`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `userToken`
+--
+ALTER TABLE `userToken`
+  ADD UNIQUE KEY `id` (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -215,22 +243,27 @@ ALTER TABLE `bruger`
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `kontakt`
 --
 ALTER TABLE `kontakt`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `produkter`
 --
 ALTER TABLE `produkter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT for table `tilladelse`
 --
 ALTER TABLE `tilladelse`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `userToken`
+--
+ALTER TABLE `userToken`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
 --
 -- Constraints for dumped tables
 --
