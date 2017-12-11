@@ -197,7 +197,7 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
 
 * Tilføj produkt
 
-  Her kan man først og fremmeste oprette et nyt pordukt. Først skal der `uploades` et billede, dette gøres ved at trykke på `Vælg billede` knappen som lader dig vælge en fil fra computeren. Derefter trykkes på `Upload billede`, hvis alt gik som det skulle vil siden vise billedet, ellers vil en passende `fejlmeddelse` vise sig.
+  Her kan man først og fremmest oprette et nyt pordukt. Først skal der `uploades` et billede, dette gøres ved at trykke på `Vælg billede` knappen som lader dig vælge en fil fra computeren. Derefter trykkes på `Upload billede`, hvis alt gik som det skulle vil siden vise billedet, ellers vil en passende `fejlmeddelse` vise sig.
 
 ![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/upload.jpg?raw=true)
 
