@@ -220,7 +220,8 @@ Søge funktionen virker ved at tage værdien fra et `text input` for så at lave
     * Navn
     * E-mail
     * Besked
-Der er ikke indbygget nogen `svar` muligheder på siden, det kunne dog godt implementeres, men virkede ikke relevant i dette tilfælde.
+    
+    Der er ikke indbygget nogen `svar` muligheder på siden, det kunne dog godt implementeres, men virkede ikke relevant i dette tilfælde.
   Nederst for hver `besked` er en `slet` knap som sletter den ønskede `besked`.
 
 ![wireframe mobil](https://github.com/TobiasBrage/hifi-tobias/blob/master/forberedelse/message.jpg?raw=true)
